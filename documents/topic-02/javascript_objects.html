@@ -180,10 +180,10 @@ document.getElementById("JavaScript Object Properties console log").innerHTML = 
             //prototype function
             function nextType(firstName, lastName, age){
                 //Inherit instance properties
-                nextType.call(this, firstName, lastName);
+                proto.call(this, firstName, lastName);
                 this.age = age;
             }
-            nextType.prototype = Object.create(nextType.prototype)
+            nextType.prototype = Object.create(proto.prototype)
             
 	    //Create NextType objects
             var nextTypeObj1= new nextType("Alejandro", "James", 10);
