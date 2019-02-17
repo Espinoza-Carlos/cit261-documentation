@@ -31,7 +31,9 @@
          <h3>JavaScript Object adding new properties</h3>
         <p id="JavaScript Object Properties"></p>
         <hr>
-
+        <h3>JavaScript Object adding new properties and display on console log</h3>
+        <p id="JavaScript Object Properties console log"></p>
+        <hr>
         <nav>
         </nav>
         <main>
@@ -158,9 +160,42 @@ document.getElementById("forloop").innerHTML = txt;
   age:33,
   eyecolor:"blue"
 };
-
+document.getElementById("JavaScript Object Properties console log").innerHTML = txt;
+        var person = {
+  firstname:"Carlos",
+  lastname:"Espinoza",
+  age:33,
+  eyecolor:"blue"
+};
+ //Example of the all above in one
+   function proto(firstName, lastName){
+   this.firstName = "Carlos",
+   this.lastName = "Espinoza"
+            }
+            //first the constructor creation
+            proto.prototype.getprotoName = function(){
+                return this.firstName + " " + this.lastName;
+            }
+            
+            //prototype function
+            function nextType(firstName, lastName, age){
+                //Inherit instance properties
+                nextType.call(this, firstName, lastName);
+                this.age = age;
+            }
+            nextType.prototype = Object.create(nextType.prototype)
+            
+	    //Create NextType objects
+            var nextTypeObj1= new nextType("Alejandro", "James", 10);
+                        
+            //nexTypeObj1
+            console.log(nextTypeObj1.firstName); //Output: Carlos
+            console.log(nextTypeObj1.lastName); //Output: Espinoza
+            console.log(nextTypeObj1.age); //Output: 33
+            console.log(nextTypeObj1.getprotoName()); //Output: Carlos Espinoza
 person.nationality = "Guatemalan";
 document.getElementById("JavaScript Object Properties").innerHTML =
 person.firstname + " is " + person.nationality + ".";
+	    
     </script>
 </html>
