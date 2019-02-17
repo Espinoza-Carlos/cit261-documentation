@@ -118,14 +118,13 @@
 		}
 		
 		function associativeArrayExample() {
-			var person = ["Carlos","Espinoza"];
-			var person = new Array();
-			person["nickName"] = "Carlos";
-			person["noName"] = "Espinoza";
-			person["age"] =33; 
-			console.log("my names is " + person[nickName]);
+			var person = [];
+			person[0] = "Carlos";
+			person[1] = "Espinoza";
+			person[2] =33; 
+			console.log("my names is " + person[0]);
 			document.getElementById("associative-array-example").innerHTML =
-				person[nickName] + " " + person.length;
+				person[0] + " " + person.length;
 			
 		}
 		
