@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          
+        <title>JSON Parse, Stringify</title>
+        </head>
+    <body>
+      
+        <header>
+            <h3>JSON Parse, Stringify</h3>
+            <hr>
+        </header>
+        <nav>
+        </nav>
+        <main>
+        <!-- Firt we have the definitions -->
+        <p>JSON: is short for JavaScript Object Notation</p>
+        <P>JSON: is a syntax for storing and exchanging data.</P>
+        <p>JSON: is text, written with JavaScript object notation.</p>
+        <!--now someting important-->
+        <b>Note:</b><p>When exchanging data between a browser and a server, the data can only be text. JSON is text, and we can convert any JavaScript object into JSON, and send JSON to the server.</p>
+        <!--now one example-->
+        
+            <hr>
+        <h3>The first example use a JSon file as variable and display its contents on the console log</h3>    
+              <script type="text/javascript">
+        let companies = [
+    {
+        "name": "Big Corporation",
+        "numberOfEmployees": 10000,
+        "ceo": "Mary",
+        "rating": 3.6
+    },
+    {
+        "name": "Small Startup",
+        "numberOfEmployees": 3,
+        "ceo": null,
+        "rating": 4.3
+    }
+]
+        
+        console.log(companies)
+        </script>
+            
+ <hr>
+            <!-- the above example was a java JSon string, now we use parse to conver to Java Json object-->
+        <h3>The 2nd example use a JSon file and we use the parse</h3>    
+              <script type="text/javascript">
+        let companie = 
+            `[
+    {
+        "name": "Big Corporation",
+        "numberOfEmployees": 10000,
+        "ceo": "Mary",
+        "rating": 3.6
+    },
+    {
+        "name": "Small Startup",
+        "numberOfEmployees": 3,
+        "ceo": null,
+        "rating": 4.3
+    }
+]`
+        
+        console.log(JSON.parse(companie))
+        </script>            
+             <hr>
+            <!-- the above example was a java JSon string, now we use parse to conver to Java Json object-->
+        <h3>The 3rd example use a JSon file and we use the parse to display </h3>    
+        <h3>in the console log the first name of the first company </h3>    
+<script>
+    
+            console.log(JSON.parse(companie)[0].name)            
+ </script>
+<hr>
+            
+            <!-- in this example we load a JSON File on a Div-->
+     <h3>4rth example will load a js file </h3>    
+            <div id ="topBar"> <a href="#" onclick="load_home()">Load js file</a></div>
+            <div id ="content"></div>
+<script>
+            function load_home(){
+                document.getElementById("content").innerHTML='<object type="text/html" data="companies.html"></object>';
+            }
+            </script>
+            <hr>
+             <!-- in this example we store and retrieve data from local storage-->
+<h3>5th Example Store and retrieve data from local storage.</h3>
+
+<p id="demo"></p>
+
+<script>
+var myObj, myJSON, text, obj;
+
+// Storing data:
+myObj = { name: "Carlos", age: 33, city: "Ridgecrest" };
+myJSON = JSON.stringify(myObj);
+localStorage.setItem("testJSON", myJSON);
+
+// Retrieving data:
+text = localStorage.getItem("testJSON");
+obj = JSON.parse(text);
+document.getElementById("demo").innerHTML = obj.name;
+</script>            
+<h2>JSON.stringify()</h2>            
+<h2>JSON.stringify().  will convert a JavaScript object into a string</h2>            
+<hr>
+            <!-- in this example I will create a JSON string from a JavaScript Object-->
+
+<h2>Create JSON string from a JavaScript object.</h2>
+
+<p id="stringify"></p>
+
+<script>
+var obj = { name: "Carlos", age: 33, city: "Ridgecrest" };
+var myJSON = JSON.stringify(obj);
+document.getElementById("stringify").innerHTML = myJSON;
+</script>
+<!-- in this example I will create a JSON string from a JavaScript array-->
+<h2>Create JSON string from a JavaScript array.</h2>
+
+<p id="stringify2"></p>
+
+<script>
+
+var arr = [ "Carlos", "Espinoza", "Analise", "James" ];
+var myJSON = JSON.stringify(arr);
+document.getElementById("stringify2").innerHTML = myJSON;
+
+</script>
+
+        </main>
+        <script>
+                
+        </script>
+        <footer>
+            
+        </footer>
+    </body>
+    <script src ="json_parse_stringify.js"
+</html>
