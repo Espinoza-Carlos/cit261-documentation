@@ -71,7 +71,7 @@
         <h3>in the console log the first name of the first company </h3>    
 <script>
     
-            console.log(JSON.parse(companie)[0].name)            
+            console.log(JSON.parse(companie)[1].rating)            
  </script>
 <hr>
             
@@ -101,7 +101,7 @@ localStorage.setItem("testJSON", myJSON);
 // Retrieving data:
 text = localStorage.getItem("testJSON");
 obj = JSON.parse(text);
-document.getElementById("demo").innerHTML = obj.name;
+document.getElementById("demo").innerHTML = obj.city;
 </script>  
  <hr>           
 <h2>JSON.stringify()</h2>            
