@@ -1,0 +1,151 @@
+ .showbox {
+    float: left;
+    margin: 4em 1em;
+    width: 100px;
+    height: 60px;
+    border: 2px solid green;
+    background-color: #fff;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  div {
+  width: 300px;
+  height: 100px;
+  background-color: lightblue;
+  border: 1px solid black;
+}
+#stage {
+    margin: 1em auto;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    -ms-perspective: 1200px;
+    perspective: 1200px;
+  }
+ #spinner {
+    -webkit-animation-name: spinner;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  #spinner:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+
+#myDiv {
+  -webkit-transform: rotateX(150deg); /* Safari */
+  transform: rotateX(150deg); /* Standard syntax */
+}
+      /* WebKit and Opera browsers */
+  @-webkit-keyframes spinner {
+    from { -webkit-transform: rotateY(0deg);    }
+    to   { -webkit-transform: rotateY(-360deg); }
+  }
+
+  /* all other browsers */
+  @keyframes spinner {
+    from {
+      -moz-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    to {
+      -moz-transform: rotateY(-360deg);
+      -ms-transform: rotateY(-360deg);
+      transform: rotateY(-360deg);
+    }
+  }
+
+      /* Topic 12 */
+      #flubber {background-color: black; margin: 20px; height: 50px; width: 50px;
+                transition: transform 1s;}
+      #flubber ~ ul {margin-top: 40px;}
+        #flubber ~ ul li {display: inline-block; list-style: none; margin-right: 5px;}
+      #resetMorphs {margin-top: 20px;}
+      .matrix {transform: matrix(0.15, 0.30, 0.45, 0.60, 0.75, 0.9);}
+      .translate {transform: translate(25px, 25px);}
+      .scale {transform: scale(0.75, 1.25);}
+      .rotate {transform: rotate(90deg);}
+      .skew {transform: skew(30deg, 30deg);}
+    
+
+      /* Topic 13 */
+      @keyframes bounce {
+        from {transform: translateX(0px)}
+        to   {transform: translateX(75px)}
+      }
+      @-webkit-keyframes bounce {
+        from {transform: translateX(0px)}
+        to   {transform: translateX(75px)}
+      }
+      .bounce {-webkit-animation: bounce 1s ease infinite alternate;
+                       animation: bounce 1s ease infinite alternate;}
+      @keyframes rainbow {
+        0%   {background-color: red;}
+        15%  {background-color: orange;}
+        30%  {background-color: yellow;}
+        45%  {background-color: green;}
+        60%  {background-color: blue;}
+        75%  {background-color: white;}
+        100% {background-color: violet;}
+      }
+      @-webkit-keyframes rainbow {
+        0%   {background-color: red;}
+        15%  {background-color: orange;}
+        30%  {background-color: yellow;}
+        45%  {background-color: green;}
+        60%  {background-color: blue;}
+        75%  {background-color: white;}
+        90%  {background-color: violet;}
+        100% {background-color: red;}
+      }
+      .rainbow {-webkit-animation: rainbow 3.5s linear infinite;
+                        animation: rainbow 3.5s linear infinite;}
+      @keyframes hover {
+        from {opacity: 1.0;}
+        to   {opacity: 0.0;}
+      }
+      @-webkit-keyframes hover {
+        from {opacity: 1.0;}
+        to   {opacity: 0.0;}
+      }
+      .hover {-webkit-animation: hover 0.5s linear 1.5s infinite alternate;
+                      animation: hover 0.5s linear 1.5s infinite alternate;}     
+      #crt {background-color: black; margin: 20px; height: 50px; width: 50px;}
+      #crt ~ ul {margin-top: 40px;}
+        #crt ~ ul li {display: inline-block; list-style: none; margin-right: 5px;}
+
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);

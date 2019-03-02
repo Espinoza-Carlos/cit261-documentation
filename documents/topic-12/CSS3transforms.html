@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Designing, Defining, and Triggering CSS3 Transforms without Custom Libraries</title>
+	<link rel="stylesheet" href="CSS3Transforms.css">
+  </head>
+    
+  <body>
+  <!--This is the link to go back to home -->
+           <a href= "https://espinoza-carlos.github.io/cit261-documentation/" target="_blank" > (Home)</a>
+
+  <h1>Examples for CSS Transitions</h1>
+  <h3>Css Transformations</h3>
+ <p>CSS allows you to format your elements using 3D transformations</p>
+      <h3>How to Use CSS Transitions?</h3> 
+<p>To create a transition effect, you must specify two things: <br> The CSS prperty that need the effect and the 
+      duration of the effect.</p>
+    <h1>The transition Property</h1>
+<h2>Code Example 1: Background Transition</h2>
+      <h1>The rotateX() Method</h1>
+<p>The rotateX() method rotates an element around its X-axis at a given degree.</p>
+
+<div>
+This a normal div element.
+</div>
+<main>
+<div id="myDiv">
+This div element is rotated 150 degrees.
+</div>
+<br>
+    <h2>Staged animation</h2>
+    <p>Now that we now how to rotate in the X axis,
+        <br>we can stage a rotate the axis to the Y. <br>
+    In the following example, I will stage a rotate Y.</p>
+    <div class="showbox" style="transform: translate(3em,0);">box 1</div>
+    <br><br><br><br>
+<div class="showbox" style="transform: rotate(30deg); border-color: red;">box 2</div>
+<div class="showbox" style="transform: rotate(60deg); border-color: yellow;">box 2</div>
+<div class="showbox" style="transform: rotate(90deg); border-color: gray;">box 2</div>
+<div class="showbox" style="transform: rotate(180deg); border-color: blue;">box 2</div>
+    <br>
+<div class="showbox" style="transform: translate(-3em,1em);">box 3</div>
+<div class="showbox" style="transform: scale(2);">box 4</div>
+<div style="clear: left;"></div>
+    <br>
+    <h2>Now we animate rotating the text</h2>
+    <div id="stage" style="background: rgba(0,0,0,0.5);">
+<p id="spinner" style="background: rgba(0,0,0,0.5); text-align: center; color: #fff;">Rotate X Example</p>
+</div>
+    <br>
+ <h2>Now we trigger the transitions with a button</h2>    
+ <h2>Morphing Shapes</h2>
+      <div id="flubber"></div>
+      <ul>
+        <li><button type="button" class ="button" onclick="matrixShape()">Rotate-x</button></li>
+        <li><button type="button" class="button" onclick="translateShape()">X & Y transform</button></li>
+        <li><button type="button" class="button" onclick="scaleShape()">Elongate</button></li>
+        <li><button type="button" class="button" onclick="rotateShape()">Rotate</button></li>
+        <li><button type="button" class="button" onclick="skewShape()">Skew</button></li>
+      </ul>
+      <button id="resetMorphs" style= background-color: red;   class="button" type="button" onclick="reset()">Reset</button>
+    </main>
+        <script type="text/javascript">
+      function matrixShape() {
+        getByID("flubber").classList.add("matrix");
+      }
+      function translateShape() {
+        getByID("flubber").classList.add("translate");
+      }
+      function scaleShape() {
+        getByID("flubber").classList.add("scale");
+      }
+      function rotateShape() {
+        getByID("flubber").classList.add("rotate");
+      }
+      function skewShape() {
+        getByID("flubber").classList.add("skew");
+      }
+      function reset() {
+        getByID("flubber").classList.remove("matrix", "translate", "scale", 
+                                            "rotate", "skew");
+      }
+    // CREATE
+function newElement(tag) {return document.createElement(tag);  }
+function newText(text)   {return document.createTextNode(text);}
+function newEvent(id, event, action) {getByID(id).addEventListener(event, action);}
+
+// DESTROY
+function delElement(parent, child) {getByID(parent).removeChild(child);}
+function delEvent(id, event, action) {getByID(id).removeEventListener(event, action);}
+
+// GET ELEMENTS
+function getByID(id)        {return document.getElementById(id);          }
+function getByClass(name)   {return document.getElementsByClassName(name);}
+function getByTag(name)     {return document.getElementsByTagName(name);  }
+function getBySelector(css) {return document.querySelectorAll(css);       }
+
+// GET FORM DATA
+function getInput(formName, inputName) {
+  return document.forms.formName.inputName.value;
+}    
+    </script>
+
+  </body>
+</html>
