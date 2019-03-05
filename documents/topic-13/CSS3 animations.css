@@ -1,0 +1,116 @@
+body {
+	background: white;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+.hover {
+   width: 100px;
+  height: 100px;
+  background: red;
+  -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s, height 4s;
+}
+
+.hover:hover {
+  width: 300px;
+  height: 300px;
+}
+.color {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+    
+}
+.transition {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  -webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+  animation-name: example2;
+  animation-duration: 6s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example2 {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+/* Standard syntax */
+@keyframes example2 {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+h1{
+   color: green;     
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform:translate(100px, 100px) rotate(0deg) translate(-100px, -100px) rotate(0deg);
+        background-color:red;
+    }  
+  13% {
+        -webkit-transform:translate(100px, 100px) rotate(45deg) translate(-100px, -100px) rotate(-45deg);
+  }
+  25% {
+      -webkit-transform:translate(100px, 100px) rotate(90deg) translate(-100px, -100px) rotate(-90deg);
+  }
+  38% {
+      -webkit-transform:translate(100px, 100px) rotate(135deg) translate(-100px, -100px) rotate(0deg);
+  }
+  50% {
+      -webkit-transform:translate(100px, 100px) rotate(180deg) translate(-100px, -100px) rotate(-180deg);
+  }
+  63% {
+      -webkit-transform:translate(100px, 100px) rotate(225deg) translate(-100px, -100px) rotate(225deg);
+  }
+  75% {
+      -webkit-transform:translate(100px, 100px) rotate(270deg) translate(-100px, -100px) rotate(-270deg);
+  }
+  88% {
+      -webkit-transform:translate(100px, 100px) rotate(315deg) translate(-100px, -100px) rotate(315deg);
+  }
+    100% {
+        -webkit-transform:translate(100px, 100px) rotate(360deg) translate(-100px, -100px) rotate(-360deg);
+    }
+}
+#circle {
+    height: 50px;
+    width: 50px;
+    border-radius:5px;
+    background-color: yellow;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name:"rotate";
+    -webkit-animation-iteration-count: infinite;
+    position:absolute;
+    left:30%;
+    top:140%; 
+}
+#button {
+  width:130px;
+  background:lightblue;
+}
