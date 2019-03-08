@@ -9,7 +9,7 @@ btn.addEventListener("click", function()
 
     
 //open can send data or receive data GET = to download POST to upload
-ourRequest.open('GET', 'http://www.filltext.com/?rows=10&fname={firstName}&lname={lastName}&pretty=true')
+ourRequest.open('GET', 'https://salty-tundra-18278.herokuapp.com/index.php/lookup/api')
 ourRequest.onload = function(){
     // next would show all the data on the console 
     //console.log(ourRequest.responseText);
@@ -37,7 +37,7 @@ btn1.addEventListener("click", function()
 
     
 //open can send data or receive data GET = to download POST to upload
-ourRequest.open('GET', 'http://www.filltext.com/?rows=10&fname={firstName}&lname={lastName}&pretty=true')
+ourRequest.open('GET', 'https://salty-tundra-18278.herokuapp.com/index.php/lookup/api')
 ourRequest.onload = function(){
     // next would show all the data on the console 
     //console.log(ourRequest.responseText);
@@ -60,7 +60,7 @@ function renderHTML(data){
     //for(i = 0; i < data.length; i++) 
       //  {
         //this will select the data and insert it on a p
-            htmlString += "<p>" + "the name is " + data[0].fname + " and the last name is " + data[0].lname + ".</p>";
+            htmlString += "<p>" + "the id is " + data[0].id + " and the type is " + data[0].type + " and the level is " + data[0].level + " and the catwalk is " + data[0].catwalk + " and the number is " + data[0].number + ".</p>";
         //}
     //this function will add HTML to a div
     personalinfo.insertAdjacentHTML('beforeend', htmlString );
@@ -77,7 +77,7 @@ tnt3.addEventListener("click", function()
 
     
 //open can send data or receive data GET = to download POST to upload
-ourRequest1.open('GET', 'http://www.filltext.com/?rows=10&fname={firstName}&lname={lastName}&pretty=true')
+ourRequest1.open('GET', 'https://salty-tundra-18278.herokuapp.com/index.php/lookup/api')
 ourRequest1.onload = function (){
     // next would show all the data on the console 
     //console.log(ourRequest.responseText);
@@ -100,7 +100,7 @@ function renderHTML1(data){
     for(i = 0; i < data.length; i++) 
         {
         //this will select the data and insert it on a p
-            htmlString3 += "<p>" + "the name is " + data[i].fname + " and the last name is " + data[i].lname + ".</p>";
+            htmlString3 += "<p>" + "the id is " + data[i].id + " and the type is " + data[i].type + " and the level is " + data[i].level + " and the catwalk is " + data[i].catwalk + " and the number is " + data[i].number + ".</p>";
         }
     //this function will add HTML to a div
     tnt.insertAdjacentHTML('beforeend', htmlString3 );
