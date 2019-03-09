@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Local Storage Storing and Retrieving Arrays, Associative Arrays, and Objects</title>
+	<link rel="stylesheet" href="storage.css"
+  </head>
+  <body>
+  
+  <h1>Local Storage Storing and Retrieving Arrays, Associative Arrays, and Objects</h1>
+   <p>According to w3schools. Web applications can store data locally within the user's browser.<br>
+
+Web storage is more secure, and laarge amounts of data can be stored locally, without affecting website performance.<br>
+
+<p><b>AJAX</b></p>
+      <p>AJAX is not a programming language.
+
+AJAX is a technique for accessing web servers from a web page.
+
+AJAX stands for Asynchronous JavaScript And XML.<br>
+      but now is more common to use JSON file than XML</p>
+      <h3> The First Example stores data with no expiration date/h3>
+          <p><b>Using windows.localStorage</b></p>
+          <br>
+          <p style="color:red";><button class ="myButton" id = "console" type="button" onclick="store()">Start the count</button></p>
+          <p style="color:red";><button class ="myButton" id = "console" type="button" onclick="clickReset()">Reset the count</button></p>
+        <div id="result"></div>
+<p>Click the button to see the counter increase.</p>
+<p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+  
+      <hr>
+      <h3> The second Example is going to store the object to local Storage while the session is active</h3>
+      <p><b>ussing sessionStorage object</b></p>
+        <p><button onclick="limitedStorage()" type="button" class ="myButton3">store the count while the session is active!</button></p>
+<div id="result2"></div>
+<p>Click the button to see the counter increase.</p>
+<p>Close the browser tab (or window), and try again, and the counter is reset.</p>
+        
+<div>
+    <h1 style=" color: lightskyblue">Storing data inserted by input</h1>
+    <p>Submit your First Name and in the second input submit your Last Name to be stored in the memory</p>
+        <div class="menuComplete">
+        <h4>Please enter your First Name <span></span></h4>
+        <form id="form">
+            <div class="form-group">
+                <input type="text" class="control" id="name" name="name" required maxlength="50" placeholder="Enter your Full Name ...">
+            </div>
+            <h4>Please enter your Last Name<span></span></h4>
+            <div class="form-group">
+                <input class="control" id="lastName" name="lastName" required maxlength="50" placeholder="Enter your Last Name ...">
+            </div><br>
+            <button type="submit" class="myButton2">Store data <span>
+                    </span></button> 
+             <br><br>
+        </form>
+    </div>
+    <div class="form12">
+        <div id="output">
+        </div>
+    </div>
+</div>
+      
+      
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+	<script src="storage.js"></script>
+      
+  </body>
+      
+      
+    </head>
+</html>
