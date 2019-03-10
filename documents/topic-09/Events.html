@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+    <title>JavaScript Events Especially for Mobile Devices (onTouchBegin) and Animation and Transition Events</title>
+      <link rel="stylesheet" href="Events.css"></link>
+  </head>
+  <body>
+  
+  <h1>JavaScript Events Especially for Mobile Devices (onTouchBegin) and Animation and Transition Events</h1>
+   <p>According to w3schools. Html events are "things" that happen to HTML elements.<br>
+
+Here are some example of HTML events:<br>
+.An HTML web paage has finished loading<br>
+.An HTML input field was changed<br>
+.An HTML button was clicked</p>
+
+<p><b>AJAX</b></p>
+      
+      <h3> The First Example is going to demonstrate the on change event</h3>
+      <p>Select a color from the rainbow.</p>
+       <div class="select">
+        <select id="mySelect" onchange="myFunction1()">
+            <option value="red">red</option>
+            <option value="yellow">yellow</option>
+            <option value="blue">blue</option>
+            <option value="green">green</option>
+        </select>
+          </div>      
+      <p>When you select a color from the rainbow box, a function is triggered which outputs the value of the selected color.</p>
+      <p id="color"></p>
+      <hr>
+      <h3> The second Example is going to demontrate on mouse over event</h3>
+      <p>Hover over the first small bottle to make it grow</p>
+      <img onmouseover="bigImg(this)"  onmouseout="normalImg(this)" border="0" src="recicle%20green.png" alt="recicle" width="32" height="32">
+      <br><hr>
+      <p>Hover over the second bottle to make it a different color </p>
+      <div id="Library"></div>
+      <hr>
+      <h3> The third Example is going to trigger the ontouchstart for mobile devices only</h3>
+      
+      <p ontouchstart="myFunction2()">Touch this paragraph to trigger a function that will write "MY first touch mobile p tag".</p>
+
+<p><strong>Note:</strong> This example is for touch devices only.</p>
+
+<p id="touch"></p>
+
+      <hr>
+      <h2>Buttons that animate and use touch</h2>
+      <P> on touch devices text will act different</P>
+      <div class="half">
+        <p id="clickText">Please hover over me</p>
+        <button id="clicker" type="button" class= "myButton3">Click button !</button>
+        <p id="clickStatus"></p>
+      </div>
+            
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+	<script src="Events.js"></script>
+      
+  </body>
+      
+      
+    </head>
+</html>

@@ -1,0 +1,228 @@
+.myButton {
+	-moz-box-shadow: 3px 4px 0px 0px #899599;
+	-webkit-box-shadow: 3px 4px 0px 0px #899599;
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #bab1ba));
+	background:-moz-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-webkit-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-o-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-ms-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#bab1ba',GradientType=0);
+	background-color:#ededed;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab1ba), color-stop(1, #ededed));
+	background:-moz-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-webkit-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-o-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-ms-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bab1ba', endColorstr='#ededed',GradientType=0);
+	background-color:#bab1ba;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.myButton2 {
+	-moz-box-shadow: 3px 4px 0px 0px #8a2a21;
+	-webkit-box-shadow: 3px 4px 0px 0px #8a2a21;
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
+	background:-moz-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:-webkit-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:-o-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:-ms-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437',GradientType=0);
+	background-color:#c62d1f;
+	-moz-border-radius:18px;
+	-webkit-border-radius:18px;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.myButton2:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24437), color-stop(1, #c62d1f));
+	background:-moz-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:-webkit-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:-o-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:-ms-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24437', endColorstr='#c62d1f',GradientType=0);
+	background-color:#f24437;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+.myButton3 {
+	-moz-box-shadow: 0px 0px 0px 2px #9fb4f2;
+	-webkit-box-shadow: 0px 0px 0px 2px #9fb4f2;
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7892c2), color-stop(1, #476e9e));
+	background:-moz-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-webkit-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-o-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-ms-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7892c2', endColorstr='#476e9e',GradientType=0);
+	background-color:#7892c2;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:10px;
+	padding:22px 47px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.myButton3:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #476e9e), color-stop(1, #7892c2));
+	background:-moz-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:-webkit-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:-o-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:-ms-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#476e9e', endColorstr='#7892c2',GradientType=0);
+	background-color:#476e9e;
+}
+.myButton3:active {
+	position:relative;
+	top:1px;
+}
+
+      
+
+         .select {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 15px;
+            width: 100%;
+        }    .select select {
+                font-family: 'Arial';
+                display: inline-block;
+                width: 100%;
+                cursor: pointer;
+                padding: 9px 30px;
+                outline: 0;
+                border: 0px solid #cc1f1f;
+                border-radius: 50px;
+                background: #191717;
+                color: #e92020;
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+            }
+                .select select::-ms-expand {
+                    display: none;
+                }
+                .select select:hover,
+                .select select:focus {
+                    color: #000000;
+                    background: #b3b31b;
+                }
+                .select select:disabled {
+                    opacity: 0.5;
+                    pointer-events: none;
+                }
+        .select_arrow {
+            position: absolute;
+            top: 1px;
+            right: 10px;
+            width: 14px;
+            height: 14px;
+            border: solid #7b7b7b;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+        .select select:hover ~ .select_arrow,
+        .select select:focus ~ .select_arrow {
+            border-color: #e21313;
+        }
+        .select select:disabled ~ .select_arrow {
+            border-top-color: #cccccc;
+        }
+#Library {
+   background-image: url('recicle%20no%20color.png');
+   border: 0;
+    height: 480px;
+   width: 480px;
+}
+
+#Library:hover {
+   background-image: url('recicle%20color.png');
+}
+
+
+
+
+ .half {display: inline-block; margin: auto; height: 200px; vertical-align: top; width: 48%;}
+    @keyframes grow {
+      from {font-weight: normal; font-size: 14px;}
+      to   {font-weight: bold; font-size: 20px;}
+    }
+    @-webkit-keyframes grow {
+      from {font-weight: normal; font-size: 14px;}
+      to   {font-weight: bold; font-size: 20px;}
+    }
+    @keyframes strobe{
+      from {color: black;}
+      to   {color: green;}
+    }
+    @-webkit-keyframes strobe {
+      from {color: black;}
+      to   {color: green;}
+    }
+    @keyframes blink {
+      from {opacity: 1.0;}
+      to   {opacity: 0.0;}
+    }
+    @-webkit-keyframes blink {
+      from {opacity: 1.0;}
+      to   {opacity: 0.0;}
+    }
+    #clickText {margin-top: 20px;}
+      .grow {-webkit-animation: grow 1s 1 forwards;
+                     animation: grow 1s 1 forwards;}
+      .strobe {font-weight: bold; font-size: 20px;
+               -webkit-animation: strobe 0.25s infinite alternate;
+                       animation: strobe 0.25s infinite alternate;}
+    #clicker {margin-top: 20px; height: 29px; width: 70px; 
+              transition: height 2s, width 2s;}
+      #clicker.expand {height: 40px; width: 100px;}
+    #clickStatus {margin-top: 10px;}
+    #touchText {margin-top: 20px; transition: color 1s;}
+      .colorize {color: green;}
+      .blink {-webkit-animation: blink 0.5s linear infinite alternate;
+                      animation: blink 0.5s linear infinite alternate;}
+    #toucher {margin-top: 20px; transition: background-color 1s;}
+      .glow {background-color: yellow;}
