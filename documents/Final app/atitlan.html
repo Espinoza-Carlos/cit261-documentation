@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
+<style>
+.mySlides {display:none;}
+html, body {
+  margin: 0; padding: 0;
+}
+.hero-bkg-animated {
+  background: gray url(https://subtlepatterns.com/patterns/geometry2.png) repeat 0 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  height: 300px;
+  padding-top: 120px;
+  box-sizing: border-box;
+  -webkit-animation: slide 20s linear infinite;
+}
+
+.hero-bkg-animated h1 {
+  font-family: sans-serif;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+     google-map {
+        height: 600px;
+      }
+    #map {
+   width: 80%;
+   height: 400px;
+   margin: 10px 110px 1px ;
+   background-color: grey;
+ }
+    
+</style>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>GT</b>Guatemala Travels</a>
+    <!-- Float links to the right. Hide them on small screens -->
+  </div>
+</div>
+
+    
+<body>
+    
+<div class="hero-bkg-animated">
+  <h1>Lake Atitlan Guatemala</h1>
+</div>
+
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="atitlan4.jpg" style="width:100%" title="yeah baby">
+  <img class="mySlides" src="atitlan3.jpg" style="width:100%">
+  <img class="mySlides" src="atitlan1.jpg" style="width:100%">
+  <img class="mySlides" src="atitlan5.jpg" style="width:100%">
+  <img class="mySlides" src="atitlan6.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+    <br>
+    <h5>The most important hydrographic accident in the department of Sololá in Guatemala is Lake Atitlán , which is one of the main economic sources of the department, as well as being a very attractive tourist center, it serves a lot of commercial support. <br><br>
+        </5>
+
+    <hr>
+    <h1 style="text-align: center">Next you will find the api for the Atitlan lake location</h1>
+                        <!-- Add Google Maps -->
+                        <div id="map"></div>
+    <br><br><br>
+<h5>In the margins of the lake the volcanoes of Atitlán (3537 msnm 1 ), Tolimán (3158 msnm ) and San Pedro volcano (3020 msnm) rise . The lake is located at 1560 meters above sea level and is 18 km long. Its depth, which varies in many points, is unknown, however they have been probed more than 350 meters deep.</h5>
+        
+                        <script>
+                            function initMap() {
+                                var guatemala = {lat: 14.7000, lng: -91.2000};
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                    zoom: 14,
+                                    center: guatemala
+                                });
+                                var marker = new google.maps.Marker({
+                                    position: guatemala,
+                                    map: map
+                                });
+                            }
+                        </script>
+                        <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3nERWsHsBME-Co15eyaCSUrsIVlfe8Rk&callback=initMap">
+                        </script>
+    
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+    
+</script>
+    
+</body>
+</html>
