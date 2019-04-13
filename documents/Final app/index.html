@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
 <link rel="stylesheet" href="style.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -27,7 +27,11 @@
   <div class="w3-display-middle w3-margin-top w3-center">
     <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Guatemala</b></span> <span class="w3-hide-small w3-text-light-grey">Turism</span></h1>
   </div>
-
+<audio controls autoplay>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="ferrocarril%20de%20los%20altos%20(128kbit_AAC).m4a" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 </header>
 
 <!-- Page content -->
@@ -37,40 +41,50 @@
   <div class="w3-container w3-padding-32" id="projects">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-15">Places to visit</h3>
   </div>
-
+<h3 style="color: crimson">Please click on the images to learn more of the destinations</h3>
   <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding">Lago de Atitlan </div>
-        <img src="atitlan2.jpg" alt="House" style="width:88%">
-      </div>
+        <a href="atitlan.html">
+        <img src="atitlan2.jpg" alt="House" style="width:88%" onclick="atitlan.html">
+        </div>
+        </a>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Tikal Guatemala</div>
+        <a href="Tikal.html">
+          <div class="w3-display-topleft w3-black w3-padding">Tikal Guatemala</div>
         <img src="image3.jpg" alt="House" style="width:100%">
       </div>
+          </a>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
+          <a href="chichicastenango.html">
         <div class="w3-display-topleft w3-black w3-padding">Chichicastenango Guatemala</div>
         <img src="chichicastenango%20guatemala.jpg" alt="House" style="width:100%">
       </div>
+          </a>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
+          <a href="chichicastenango2.html">
         <div class="w3-display-topleft w3-black w3-padding">Chichicastenango 2nd image</div>
         <img src="chichicastenango%20guatemala2.jpg" alt="House" style="width:89%">
       </div>
+          </a>
     </div>
   </div>
 
   <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
+          <a href="semucchampey.html">
         <div class="w3-display-topleft w3-black w3-padding">Semucchampey</div>
         <img src="semucchampey.jpg" alt="House" style="width:98%">
       </div>
+          </a>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
@@ -154,7 +168,7 @@ This was considered by the  pre-Columbian civilizations of Mesoamerica  as a div
   <div class="droplet">Thank you</div>
 <!-- Image of location/map -->
 <div class="w3-container">
-  <img src="thank-you-icon.jpg" class="w3-image" style="width:100%">
+  <img src= class="w3-image" style="width:100%">
 </div>
 
 <!-- End page content -->
